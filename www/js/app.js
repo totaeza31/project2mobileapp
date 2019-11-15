@@ -465,6 +465,11 @@ arrayPrice=[];
  var selectLat;
  var selectLng;
 
+ $("#backbtn").click(function () {
+
+    content.load('tabbar.html')
+        .then(menu.close.bind(menu));
+});
 
 
   var onSuccess = function(position) {
